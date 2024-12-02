@@ -1,9 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .stuff {
+    color: white;
     display: flex;
     justify-content: center;
     height: 100vh;
