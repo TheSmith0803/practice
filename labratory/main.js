@@ -20,3 +20,9 @@ function sumOf2(a, b) {
 }
 
 console.log(sumOf2(42, 77));
+
+// and this would be the way to use an arrow function
+
+let arrowSum = (a, b) => a + b;
+
+console.log(arrowSum(34, 22,));
