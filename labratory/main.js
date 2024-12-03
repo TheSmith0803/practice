@@ -1,8 +1,19 @@
 let stuff = document.querySelector('.stuff-child');
+let stuff_text = "stuff";
 let thing = "did a thing!";
 
 function dostuff() {
-    stuff.innerHTML = thing;
+    
+    if (!stuff){
+        return;
+    }
+
+    if (stuff.innerHTML == stuff_text) {
+        stuff.innerHTML = thing;
+    } else if (stuff.innerHTML == thing) {
+        stuff.innerHTML = stuff_text;
+    }
+
 }
 
 // function expression
