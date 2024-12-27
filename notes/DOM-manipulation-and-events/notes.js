@@ -145,3 +145,4 @@ div.innerHTML = "<span>Hello World!</span>";
 //REMEMBER THOUGH! -- The defer attribute is only for external scripts
 //If the script tag has no src, the defere attribute is ignored.
 
+//CONTINUE ON WITH EVENTS 
