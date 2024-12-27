@@ -11,24 +11,25 @@ link.href = "https://developer.mozilla.org";
 const sect = document.querySelector("section");
 const para = document.createElement("p");
 para.textContent = "Aw yep";
+para.setAttribute("class", "highlight");
 
 sect.appendChild(para);
+//Manipulating styles
+
+
 
 //create text node
 const text = document.createTextNode(
     " -- the premier source for web dev stuffs.",
 );
-```
+
 //append text node to created paragraph
-const linkPara = document.querySelector("p");
-linkPara.appendChild(text);
 //Keep in mind...linkPara only refers to the ONE paragraph
 //So by appending it to sect, it gets moved up in the DOM under sect
 
 //Moving and removing elements
 
-sect.appendChild(linkPara);
-
+```
 //this removed the paragraph entirely
 sect.removeChild(linkPara);
 
@@ -38,7 +39,5 @@ linkPara.remove(); //However this method is not supported in older browsers
 
 linkPara.parentNode.removeChild(linkPara);
 ```
-//putting the para back in 
 
 
-//Manipulating styles
