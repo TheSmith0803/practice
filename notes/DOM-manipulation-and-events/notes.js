@@ -146,3 +146,11 @@ div.innerHTML = "<span>Hello World!</span>";
 //If the script tag has no src, the defere attribute is ignored.
 
 //CONTINUE ON WITH EVENTS 
+
+/** You kinda of already know about it but you can
+ * put function attributes on your HTML elements, stuff like
+ * onclick or onmouseover
+*/
+
+//Here are three seperate methods to do 
+
