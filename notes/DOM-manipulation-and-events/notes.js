@@ -152,5 +152,3 @@ div.innerHTML = "<span>Hello World!</span>";
  * onclick or onmouseover
 */
 
-//Here are three seperate methods to do 
-
