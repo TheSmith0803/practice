@@ -59,3 +59,5 @@ last1.addEventListener("click", (e) => {
     e.target.style.color = "white";
 });
 
+
+
