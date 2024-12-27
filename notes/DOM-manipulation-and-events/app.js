@@ -1,9 +1,10 @@
-console.log("Hello");
-
 const container = document.querySelector("#container");
 
-let div = document.createElement("div");
+const content = document.createElement("div");
+content.classList.add("content");
+content.textContent = "This is some text added in by Javascript!";
 
-container.appendChild(div);
+//some styles
+content.style["color"] = "red";
 
-div.classList.add("new-div");
+container.appendChild(content);

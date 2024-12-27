@@ -106,3 +106,42 @@ div.classList.remove("new");
 
 // if div doesn't have class "active" then add it, or if it does, then remove it
 div.classList.toggle("active");
+
+
+//YOU CAN ADD TEXT TO AN HTML ITEM
+
+//preferred method
+// creates a text node containing "Hello World!" and inserts it in div
+div.textContent = "Hello World!";
+
+//alternate method
+// renders the HTML inside div
+div.innerHTML = "<span>Hello World!</span>";
+
+//textContent is preferred over innerHTML for adding text, 
+// as innerHTML should be used sparingly to avoid potential 
+// security risks. To understand the dangers of using innerHTML
+
+//IMPORTANT NOTES HERE
+
+/** Your JavaScript, for the most part, is run whenever the JS file is run or 
+ * when the script tag is encountered in the HTML. If you are including your 
+ * JavaScript at the top of your file, many of these DOM manipulation methods 
+ * will not work because the JS code is being run before the nodes are created 
+ * in the DOM. The simplest way to fix this is to include your JavaScript at the 
+ * bottom of your HTML file so that it gets run after the DOM nodes are parsed and 
+ * created.
+ *
+ * Alternatively, you can link the JavaScript file in the <head> of your HTML document.
+ * Use the <script> tag with the src attribute containing the path to the JS file, 
+ * and include the defer keyword to load the file after the HTML is parsed, as such:*/
+
+<head>
+  <script src="js-file.js" defer></script>
+</head>
+
+//Defer seems very useful
+
+//REMEMBER THOUGH! -- The defer attribute is only for external scripts
+//If the script tag has no src, the defere attribute is ignored.
+
