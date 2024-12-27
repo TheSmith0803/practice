@@ -86,3 +86,13 @@ div.style["background-color"];
 // bracket notation with camelCase: also works
 div.style["backgroundColor"];
 
+
+//YOU CAN ALSO EDIT ATTRIBUTES OF DEFINED DIVS
+// if id exists, update it to 'theDiv', else create an id with value "theDiv"
+div.setAttribute("id", "theDiv");
+
+// returns value of specified attribute, in this case "theDiv"
+div.getAttribute("id");
+
+// removes specified attribute
+div.removeAttribute("id");

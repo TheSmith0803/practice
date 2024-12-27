@@ -1,6 +1,10 @@
-const str1 = "Hi ";
-const str2 = "Mom!";
+//just messing around with DOM stuff
+const container = document.querySelector("#container");
 
-const message = str1.concat(str2);
+for (let i = 1; i <= 10; i++) {
+    //create 10 divs each with their own name
+    let div = document.createElement("div");
+    container.appendChild(div);
+    div.setAttribute("class", `item${i}`)
+}
 
-console.log(message);
