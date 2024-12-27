@@ -96,3 +96,13 @@ div.getAttribute("id");
 
 // removes specified attribute
 div.removeAttribute("id");
+
+//YOU CAN ALSO DO THE SAME THING WITH CLASSES
+// adds class "new" to your new div
+div.classList.add("new");
+
+// removes "new" class from div
+div.classList.remove("new");
+
+// if div doesn't have class "active" then add it, or if it does, then remove it
+div.classList.toggle("active");
