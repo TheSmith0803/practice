@@ -9,3 +9,9 @@ const person = {
 console.log(person);
 
 person.bio();
+
+let person2 = person;
+
+person2.name = ["Billy", "Bob"];
+
+console.log(person.name + "\n" + person2.name);
