@@ -107,3 +107,16 @@ console.log(user.name);
 delete user.name;
 
 console.log(user.name);
+
+
+let getCars = (car1, car2, car3) => {
+    return {
+        car1,
+        car2,
+        car3,
+    }
+};
+
+let dealer = getCars("Toyota", "Mazda", "Acura");
+
+console.log(dealer);
