@@ -91,7 +91,7 @@ let user2 = {
 
 //console.log(user2.name);
 //console.log(user2);
-*/
+
 
 let user = {
     name: "John",
@@ -120,3 +120,21 @@ let getCars = (car1, car2, car3) => {
 let dealer = getCars("Toyota", "Mazda", "Acura");
 
 console.log(dealer);
+
+*/
+
+const person = {
+    name: ["Bob", "Smith"],
+    age: 32,
+    bio: function () {
+        return`${this.name[0]} ${this.name[1]} is ${this.age} years old`
+    },
+    introduction: function () {
+        return `Hi! I'm ${this.name[0]}.`
+    }
+}
+
+console.log(person.bio());
+console.log(person.introduction());
+
+
