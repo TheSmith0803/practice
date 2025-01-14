@@ -18,3 +18,26 @@ let array = [1,2,3,4,5,6,7,8,9];
 let result = sumOfTripledEvens(array);
 
 console.log(result);
+
+
+//Now we move on to the map method!!!
+
+function addOne(num) {
+    return num + 1;
+}
+//the map method has to take a function as an argument...
+const arr = [1,2,3,4,5];
+const mappedArr = arr.map(addOne);
+console.log("This is the mapped array: " + mappedArr);//outputs [2,3,4,5,6]
+
+//you can define an inline function right inside the map method like so
+
+const mappedArr2 = arr.map((num) => num + 1);
+console.log(mappedArr); //still outputs [2,3,4,5,6]
+
+//THE FILTER METHOD
+
+function isOdd(num) {
+    return num % 2 !== 0;
+}
+const arr = [1,2,3,4,5];
