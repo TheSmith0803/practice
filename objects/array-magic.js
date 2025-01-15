@@ -40,4 +40,7 @@ console.log(mappedArr); //still outputs [2,3,4,5,6]
 function isOdd(num) {
     return num % 2 !== 0;
 }
-const arr = [1,2,3,4,5];
+const arr2 = [1,2,3,4,5,6,7,8,9];
+const oddNums = arr2.filter(isOdd);
+console.log(oddNums);
+//same deal here you could define an inline function as the argument for the filter method
