@@ -44,3 +44,16 @@ const arr2 = [1,2,3,4,5,6,7,8,9];
 const oddNums = arr2.filter(isOdd);
 console.log(oddNums);
 //same deal here you could define an inline function as the argument for the filter method
+
+console.log("\n\n\nReduce Method Stuff:\n\n");
+
+//THE REDUCE METHOD 
+
+const arr3 = [1,2,3,4,5];
+
+const productOfAllNums = arr.reduce((total, currentItem) => {
+  return total * currentItem;
+}, 1);
+console.log(productOfAllNums);
+console.log(arr3);
+
