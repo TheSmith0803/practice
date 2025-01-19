@@ -57,3 +57,17 @@ const productOfAllNums = arr.reduce((total, currentItem) => {
 console.log(productOfAllNums);
 console.log(arr3);
 
+const anotherArr = [1,3,5,7,9,11];
+
+const totalSum = anotherArr.reduce((fart, currentItem) => {
+  return fart + currentItem;
+}, 1);
+
+let total = 0;
+
+console.log(totalSum);
+for(let i = 0; i < anotherArr.length; i++) {
+  total = total + anotherArr[i];
+  console.log(total);
+}
+
